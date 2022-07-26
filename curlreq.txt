@@ -1,0 +1,8 @@
+//register user
+curl -X POST --data "{\"user_id\":\"user1\", \"membership\":1}" -H "Content-Type: application/json" http://localhost:8080/registerUser
+curl -X POST --data "{\"user_id\":\"user2\", \"membership\":2}" -H "Content-Type: application/json" http://localhost:8080/registerUser
+curl -X POST --data "{\"user_id\":\"user3\", \"membership\":3}" -H "Content-Type: application/json" http://localhost:8080/registerUser
+
+//buy coffee
+curl -X POST --data "{\"user_id\":\"user1\", \"coffee_type\":1}" -H "Content-Type: application/json" http://localhost:8080/buyCoffee
+curl -X POST --data "{\"user_id\":\"user2\", \"coffee_type\":2}" -H "Content-Type: application/json" http://localhost:8080/buyCoffee
